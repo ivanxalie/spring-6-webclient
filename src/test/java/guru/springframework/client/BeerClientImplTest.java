@@ -2,6 +2,7 @@ package guru.springframework.client;
 
 import guru.springframework.model.BeerDTO;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -12,6 +13,7 @@ import java.util.function.Consumer;
 import static org.awaitility.Awaitility.await;
 
 @SpringBootTest
+@Timeout(5)
 class BeerClientImplTest {
     @Autowired
     BeerClient client;
