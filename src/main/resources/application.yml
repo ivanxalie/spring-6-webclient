@@ -18,3 +18,8 @@ spring:
               - message.write
             authorization-grant-type: client_credentials
             provider: springauth
+
+logging:
+  level:
+    guru.springframework: debug
+    org.zalando.logbook: trace
